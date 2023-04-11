@@ -16,7 +16,7 @@ export class HomeComponent {
     var lastPossibleIndex = smallestLength - partLength;
 
     for (var i = 0; i <= lastPossibleIndex; i++) {
-      if (firstString[i] == secondString[i] && firstString[i + 1] == secondString[i + 1]) {
+      if (firstString.substring(i, i + partLength) == secondString.substring(i, i + partLength)) {
         this.result++;
       }
     }
